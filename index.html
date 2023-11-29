@@ -4,30 +4,146 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
-        body { margin: 0; background: #5b75a8 }
-        .human { position: absolute; width: 10vw; height: 15vw; overflow: hidden; }
+        body { margin: 0; background: #5c73a9 }
+
+        .human { position: absolute; width: 13vw; height: 18vw; overflow: hidden; }
         .human img { width: 100%; height: 100%; object-fit: cover; } /* Set image to cover the container */
-        .grass { background: #398e55; width: 100vw; height: 5vw; position: absolute; top: 30vw;}
-        .brick { background: #c74431; width: 100vw; height: 5vw; position: absolute; top: 32vw;}
-        #a1 { left: 8vw; top: 15vw; }
-        #a2 { left: 25vw; top: 15vw; }
-        #a3 { left: 40vw; top: 15vw; }
-        #a4 { left: 55vw; top: 15vw; }
-        #a5 { left: 70vw; top: 15vw; }
-        #a6 { left: 85vw; top: 15vw; }
+        .grass img { width: 100vw; height: 6vw; position: absolute; top: 33.5vw;}
+        .brick img { width: 100vw; height: 14vw; position: absolute; top: 37vw;}
+        .grass2 img { width: 100vw; height: 6vw; position: absolute; top: 45.5vw;}
+        .brick2 img { width: 100vw; height: 10.5vw; position: absolute; top: 49vw;}
+        .shy {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12vw;
+    height: 12vw;
+}
+
+.shy img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+        
+
+
+        #a1 { left: 2vw; top: 19.5vw; }
+        #a2 { left: 18vw; top: 19.5vw; }
+        #a3 { left: 34vw; top: 19.5vw; }
+        #a4 { left: 51vw; top: 19.5vw; }
+        #a5 { left: 68vw; top: 19.5vw; }
+        #a6 { left: 84.5vw; top: 19.5vw; }
+        #a7 { left: 10vw; top:31vw; }
+        #a8 { left: 26vw; top:31vw; }
+        #a9 { left: 42vw; top:31vw; }
+        #a10 { left: 58vw; top:31vw; }
+        #a11 { left: 74vw; top:31vw; }
 
     </style>
 </head>
 <body>
-    <div class="grass"></div>
+
     <div class="human" id="a1"><img src="p1.png" alt="Human 1"></div>
     <div class="human" id="a2"><img src="p2.png" alt="Human 2"></div>
     <div class="human" id="a3"><img src="p3.png" alt="Human 3"></div>
     <div class="human" id="a4"><img src="p4.png" alt="Human 4"></div>
     <div class="human" id="a5"><img src="p5.png" alt="Human 5"></div>
     <div class="human" id="a6"><img src="p6.png" alt="Human 6"></div>
-    <div class="grass" id="grass"></div>
-    <div class="brick" id="brick"></div>
+    <div class="grass" id="grass"><img src="windyy.gif" alt="grass"></div>
+    <div class="brick" id="brick"><img src="brick4.jpg" alt="grass"></div>
+    <div class="human" id="a7"><img src="p7.png" alt="Human 7"></div>
+    <div class="human" id="a8"><img src="p8.png" alt="Human 8"></div>
+    <div class="human" id="a9"><img src="p9.png" alt="Human 9"></div>
+    <div class="human" id="a10"><img src="p10.png" alt="Human 10"></div>
+    <div class="human" id="a11"><img src="p11.png" alt="Human 11"></div>
+    <div class="grass2" id="grass2"><img src="windyy.gif" alt="grass"></div>
+    <div class="brick2" id="brick2"><img src="brickss.jpg" alt="grass"></div>
+
+    <script>
+        // Function to handle the click event on human images
+        function handleHumanClick(humanId) {
+            // Redirect to another page based on the clicked human
+            switch (humanId) {
+                case 'a1':
+                    window.location.href = 'indexp3.html'; // Change 'page1.html' to the actual URL you want to redirect to
+                    break;
+                case 'a2':
+                    window.location.href = 'indexp3.html'; // Change 'page2.html' to the actual URL you want to redirect to
+                    break;
+                case 'a3':
+                    window.location.href = 'indexp3.html'; // Change 'page2.html' to the actual URL you want to redirect to
+                    break;  
+                case 'a4':
+                    window.location.href = 'indexp3.html'; // Change 'page2.html' to the actual URL you want to redirect to
+                    break; 
+                case 'a5':
+                    window.location.href = 'indexp3.html'; // Change 'page2.html' to the actual URL you want to redirect to
+                    break; 
+                case 'a6':
+                    window.location.href = 'indexp3.html'; // Change 'page2.html' to the actual URL you want to redirect to
+                    break; 
+                case 'a7':
+                    window.location.href = 'indexp3.html'; // Change 'page2.html' to the actual URL you want to redirect to
+                    break; 
+                case 'a8':
+                    window.location.href = 'indexp3.html'; // Change 'page2.html' to the actual URL you want to redirect to
+                    break; 
+                case 'a9':
+                    window.location.href = 'indexp3.html'; // Change 'page2.html' to the actual URL you want to redirect to
+                    break; 
+                case 'a10':
+                    window.location.href = 'indexp3.html'; // Change 'page2.html' to the actual URL you want to redirect to
+                    break; 
+                case 'a11':
+                    window.location.href = 'indexp3.html'; // Change 'page2.html' to the actual URL you want to redirect to
+                    break; 
+                // Add more cases for other humans as needed
+                default:
+                    break;
+            }
+        }
+
+        // Add click event listeners to each human element
+        document.getElementById('a1').addEventListener('click', function() {
+            handleHumanClick('a1');
+        });
+        document.getElementById('a2').addEventListener('click', function() {
+            handleHumanClick('a2');
+        });
+         document.getElementById('a3').addEventListener('click', function() {
+            handleHumanClick('a3');
+        });
+         document.getElementById('a4').addEventListener('click', function() {
+            handleHumanClick('a4');
+        });
+         document.getElementById('a5').addEventListener('click', function() {
+            handleHumanClick('a5');
+        });
+         document.getElementById('a6').addEventListener('click', function() {
+            handleHumanClick('a6');
+        });
+         document.getElementById('a7').addEventListener('click', function() {
+            handleHumanClick('a7');
+        });
+         document.getElementById('a8').addEventListener('click', function() {
+            handleHumanClick('a8');
+        });
+         document.getElementById('a9').addEventListener('click', function() {
+            handleHumanClick('a9');
+        });
+         document.getElementById('a10').addEventListener('click', function() {
+            handleHumanClick('a10');
+        });
+         document.getElementById('a11').addEventListener('click', function() {
+            handleHumanClick('a11');
+        });
+        // Add similar lines for other humans
+
+        // Repeat the above process for each human element
+    </script>
 </body>
 </html>
 
